@@ -5,407 +5,287 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MeuPortfólio</title>
+    <title>EccoArt</title>
 
-    <!--==================== UNICONS ====================-->
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- SWIPER -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <title>Responsive Portfolio Website</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Luís</a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contactme
-              </a>
-            </li>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">Necessário<span>EccoArt</span>.</a>
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
           </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
-
-        <div class="nav__btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/luis-tei/"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-
-              <a
-                href="https://dribbble.com/LuisT-ls"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-dribbble"></i>
-              </a>
-
-              <a
-                href="https://github.com/LuisT-ls"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-github-alt"></i>
-              </a>
-            </div>
-
-            <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-
-                  <image
-                    class="home__blob-img"
-                    x="10"
-                    y="-10"
-                    xlink:href="assets/img/perfil.png"
-                  />
-                </g>
-              </svg>
-            </div>
-
-            <div class="home__data">
-              <h1 class="home__title">Olá, sou Luís Teixeira</h1>
-              <h3 class="home__subtitle">Frontend developer</h3>
-              <p class="home__description">
-                Hight level experience in web design and knowledge, producing
-                quality work.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="assets/fotos/fotoprincipal.png" alt="Foto destaque" />
           </div>
-
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My instroduction</span>
-
-        <div class="about__container container grid">
-          <img src="assets/img/about.jpg" alt="" class="about__img" />
-
-          <div class="about__data">
-            <p class="about__description">
-              Web Developer, with extensive knowlodge and years of experience,
-              working inweb technlogies and Ui / Ux design, delivering quality
-              work.
+          <div class="text">
+            <h2 class="title">
+              Belos colares e pulseiras para o seu belo corpo!
+            </h2>
+            <p>
+              Uma lojinha feita com bastante amor, especializada em acessórios
+              ecológicos temáticos de mulheres guerreiras.
             </p>
+            <a class="button" href="#">Realize uma consulta</a>
+          </div>
+        </div>
+      </section>
 
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">01+</span>
-                <span class="about__info-name"
-                  >Year <br />
-                  experience</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">20+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  project</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">05+</span>
-                <span class="about__info-name"
-                  >Companies <br />
-                  worked</span
-                >
-              </div>
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="assets/fotos/conjunto2.jpeg"
+              alt="Colar, Brinco e Pulseira"
+            />
+          </div>
+
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Excepturi recusandae assumenda dolore at laboriosam natus, soluta
+              nostrum? Eligendi perspiciatis, similique quae adipisci temporibus
+              rem illum consequuntur? Veritatis eveniet aspernatur hic.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque, illum odit dolorem cum eum veritatis! Culpa, iusto, ab
+              ex corrupti magni similique, corporis natus rem quod quo quidem
+              blanditiis. Dolore?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+              commodi distinctio incidunt id ut officiis voluptate consequatur
+              cum, quia nam, asperiores ducimus eveniet quidem minima quam
+              alias. Quam, voluptatem quibusdam?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p class="subtitle">
+              Iniciando recentemente no mercado, a
+              <strong>NecessárioEccoArt</strong> já conquistou clientes de
+              inúmeras cidades com seus belos acessórios exclusivos, temáticos e
+              totalmente ecológicos.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <h3 class="title">Colares</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati culpa temporibus, incidunt possimus debitis voluptas,
+                iste necessitatibus pariatur nemo quam eum accusantium ducimus
+                voluptatum provident magnam dignissimos sit vero recusandae?
+              </p>
             </div>
-
-            <div class="about__buttons">
-              <a
-                download=""
-                href="assets/pdf/Currículo-Luís.pdf"
-                class="button button--flex"
-              >
-                Download CV<i class="uil uil-download-alt button__icon"></i>
-              </a>
+            <div class="card">
+              <h3 class="title">Brincos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Cupiditate deserunt quidem dolorum aliquam reiciendis, nesciunt
+                ullam minima iure ratione, repellendus ad quam, molestias quo
+                voluptatum. Totam tempora voluptate corporis eaque?
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="title">Pulseiras</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                possimus exercitationem magnam obcaecati, expedita at quibusdam
+                tempora sed eius, consequatur excepturi reprehenderit aut
+                corrupti repellendus officiis voluptatem facere molestias rerum.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+      <div class="divider-1"></div>
 
-        <div class="skills__container container grid">
-          <div>
-            <!--==================== SKILLS 1 ====================-->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Frontend developer</h1>
-                  <span class="skills__subtitle">More than 1 year</span>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">
+              Depoimentos das Deusas que compraram algum produto nosso
+            </h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, eum? Error maiores dolor nulla est suscipit sint
+                    pariatur tenetur facilis possimus officiis, sed, dolorem
+                    voluptatum blanditiis architecto quas, eveniet provident.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/36.jpg"
+                      alt="Leilane"
+                    />
+                    Leilane Teixeira
+                  </cite>
+                </blockquote>
               </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__number">55%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">10%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">0%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--==================== SKILLS 2 ====================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-server-network skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Backend developer</h1>
-                  <span class="skills__subtitle">More than 1 month</span>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, eum? Error maiores dolor nulla est suscipit sint
+                    pariatur tenetur facilis possimus officiis, sed, dolorem
+                    voluptatum blanditiis architecto quas, eveniet provident.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/69.jpg"
+                      alt="Mariana"
+                    />
+                    Mariana Ferreira
+                  </cite>
+                </blockquote>
               </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__number">0%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__number">0%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__node"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__number">0%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__number">0%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__python"></span>
-                  </div>
-                </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, eum? Error maiores dolor nulla est suscipit sint
+                    pariatur tenetur facilis possimus officiis, sed, dolorem
+                    voluptatum blanditiis architecto quas, eveniet provident.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/89.jpg"
+                      alt="Amanda"
+                    />
+                    Amanda Teixeira
+                  </cite>
+                </blockquote>
               </div>
             </div>
-          </div>
 
-          <div>
-                <!--==================== SKILLS 3 ====================-->
-                <div class="skills__content skills__close">
-                  <div class="skills__header">
-                    <i class="uil uil-swatchbook skills__icon"></i>
-
-                    <div>
-                      <h1 class="skills__title">Designer</h1>
-                      <span class="skills__subtitle">More than 6 months</span>
-                    </div>
-    
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                  </div>
-    
-                  <div class="skills__list grid">
-                    <div class="skills__data">
-                      <div class="skills__titles">
-                        <h3 class="skills__name">Figma</h3>
-                        <span class="skills__number">20%</span>
-                      </div>
-                      <div class="skills__bar">
-                        <span class="skills__percentage skills__figma"></span>
-                      </div>
-                    </div>
-    
-                    <div class="skills__data">
-                      <div class="skills__titles">
-                        <h3 class="skills__name">Sketch</h3>
-                        <span class="skills__number">0%</span>
-                      </div>
-                      <div class="skills__bar">
-                        <span class="skills__percentage skills__sketch"></span>
-                      </div>
-                    </div>
-
-                    <div class="skills__data">
-                      <div class="skills__titles">
-                        <h3 class="skills__name">Photoshop</h3>
-                        <span class="skills__number">20%</span>
-                      </div>
-                      <div class="skills__bar">
-                        <span class="skills__percentage skills__photoshop"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
 
-      <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section"></section>
+      <div class="divider-2"></div>
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
+      <!-- CONTACTS -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a EccoArt, queremos tirar suas dúvidas, ouvir
+              suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5571982647688&text=Oi! gostaria de comprar um produto da lojinha"
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
 
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 71 98264-7688</li>
+              <li><i class="icon-mail"></i> laisefranco@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section"></section>
-
-      <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section"></section>
-
-      <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact"></section>
+      <div class="divider-1"></div>
     </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home"
+            >Necessário<span>EccoArt</span>.</a
+          >
+          <p>©2021 NecessárioEccoArt</p>
+          <p>Todos os direitos reservados</p>
+        </div>
 
-    <!--==================== SCROLL TOP ====================-->
+        <div class="social grid">
+          <a
+            href="https://www.instagram.com/necessario.ecco_art/"
+            target="_blank"
+            ><i class="icon-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
   </body>
 </html>
